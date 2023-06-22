@@ -1,0 +1,249 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat.ttf);
+}
+@font-face {
+  font-family: TT_Lakes;
+  src: url(../fonts/TT_Lakes.otf);
+}
+
+body,
+html {
+  font: normal normal bold 18px/24px TT_Lakes !important;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  color: #fff;
+  background-color: #000;
+  font-weight: 400;
+  width: 100% !important;
+  height: 100% !important;
+}
+#root {
+  width: 100%;
+}
+.container {
+  /* width: 1200px !important; */
+  padding: 10px !important;
+  /* width: 80% !important; */
+}
+
+.btn-connect {
+  background-color: #FFF;
+  margin-right: 35px;
+  height: 82px;
+  width: 325px;
+  border-radius: 0;
+  font-size: 24px;
+  color: #000;
+  font-family: fantasy;
+}
+
+.btn-red {
+  color: #FFF;
+  background-color: #F00;
+}
+
+p.title {
+  font: normal normal bold 32px/43px TT_Lakes;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+
+
+
+/* Navigation */
+#menu {
+  padding: 32px 45px;
+  margin: 0;
+  transition: all 0.8s;
+}
+#menu.navbar-default {
+  background-color: #000;
+  color: #FFF;
+  border-color: rgba(231, 231, 231, 0);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+#menu a.navbar-brand {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #FFF;
+  text-transform: uppercase;
+  height: auto !important;
+}
+#menu .navbar-header {
+  background-image: url(./img/logo.png);
+  background-size: 100% 100%;
+}
+#menu .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menu .social-title, .social-icon {
+  display: inline;
+}
+.social-icon {
+  height: 30px;
+  margin-left: 30px;
+}
+.social-title {
+  padding: 0 15px !important;
+  letter-spacing: 0px;
+  color: #FFFFFF !important;
+  opacity: 1;
+}
+
+/* Maing Section */
+#main {
+  margin-top: 60px;
+}
+  /* Intro Subsection */
+  #intro p.body {
+    text-align: left;
+    font: normal normal normal 18px/28px Montserrat;
+    font-weight: bold;
+    letter-spacing: 0px;
+    margin-bottom: 30px;
+    color: #AAA;
+  }
+  #intro span.bright {
+    color: #FFF;
+    font-weight: bold;
+  }
+
+  /* FAQ Subsection */
+  #faq {
+    margin-top: 30px;
+  }
+  #faq p.body {
+    margin-bottom: 18px;
+  }
+
+
+
+
+
+
+
+
+
+/* About Section */
+#about {
+  padding-top: 50px;
+}
+#about img {
+  width: 100%;
+  margin-top: 10px;
+  background: #fff;
+  border-right: 0;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
+  border-radius: 15px;
+}
+#about p {
+  line-height: 24px;
+  margin: 30px 0;
+}
+
+/* Mint Section */
+#mint {
+  padding-bottom: 70px;
+  width: 405px;
+  text-align: justify;
+  font-size: 18px;
+}
+.mint-price {
+  width: 100%;
+  font: normal normal bold 29px/43px TT_Lakes;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+#mint .mint-amount {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: solid 3px #AAA;
+  color: #FFF;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#mint .mint-button {
+  padding: 33px;
+  width: 100%;
+  background-color: #D43C3A;
+  border-radius: 0;
+  font: normal normal medium 18px/24px  !important;
+  letter-spacing: 0px;
+  color: #E6E6E6;
+  margin-bottom: 30px;
+}
+#mint .mint-button:hover { 
+  color: #FFF;
+}
+
+/* Footer Section */
+#footer {
+  padding: 100px 45px;
+}
+
+#footer .tier {
+  width: 100%;
+}
+
+#footer .info {
+  padding-top: 70px;
+  font:normal normal medium 12px/16px !important;
+  font-family: Montserrat;
+}
+
+
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1600px;
+    width: 1540px;
+  }
+}
+
+/* @media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+} */
+
+
+
+
+@media (max-width: 768px) {
+  #about img {
+    margin: 50px 0;
+  }
+  img.logo {
+    width: 230px;
+    height: 230px;
+  }
+}
+
+@media (max-width: 544px) {
+  #root {
+    padding: 0 10px;
+  }
+  .container {
+    /* width: 1200px !important; */
+    width: 100% !important;
+  }
+  h2 {
+    font-size: 26px;
+  }
+}
+
+
+
